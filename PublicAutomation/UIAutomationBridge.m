@@ -45,13 +45,23 @@
 }
 
 + (CGPoint) tapView:(UIView *)view atPoint:(CGPoint)point{
+    CGPoint tapPoint = [self tapCoordsForView:view atPoint:point];
+    
+    DLog(@"tapping at screen coords (%.2f,%.2f)", tapPoint.x,tapPoint.y);
+    [[self uia] sendTap:tapPoint];
+    
+    return tapPoint;
+}
+
++ (CGPoint) tapCoordsForView:(UIView *)view atPoint:(CGPoint)point{
     CGPoint tapPointInWindowCoords = [view convertPoint:point toView:[view window]];
-    CGPoint tapPointInScreenCoords = [[view window] convertPoint:tapPointInWindowCoords toWindow:nil];
-    
-    DLog(@"tapping at (%.2f,%.2f)", tapPointInScreenCoords.x,tapPointInScreenCoords.y);
-    [[self uia] sendTap:tapPointInScreenCoords];
-    
-    return tapPointInScreenCoords;
+
+    // fix for https://github.com/moredip/Frank/issues/278
+    if( [UIWindow instancesRespondToSelector:@selector(convertPoint:toCoordinateSpace:)] ){
+        return [[view window] convertPoint:tapPointInWindowCoords toCoordinateSpace:[[UIScreen mainScreen] fixedCoordinateSpace]];
+    }else{
+        return [[view window] convertPoint:tapPointInWindowCoords toWindow:nil];
+    }
 }
 
 + (CGPoint) downView:(UIView *)view {
