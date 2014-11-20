@@ -11,7 +11,7 @@
     _Bool _voiceOverStyleTouchEventsEnabled;
     UIScreen *_screen;
     double _gsScreenScale;
-    CDStruct_3eca2549 *_activePoints;
+//    CDStruct_3eca2549 *_activePoints;
     unsigned long long _activePointCount;
     struct __IOHIDEventSystemClient *_ioSystemClient;
     struct CGSize _screenSize;
@@ -23,7 +23,7 @@
 @property(readonly) struct __IOHIDEventSystemClient *ioSystemClient; // @synthesize ioSystemClient=_ioSystemClient;
 @property(nonatomic) _Bool voiceOverStyleTouchEventsEnabled; // @synthesize voiceOverStyleTouchEventsEnabled=_voiceOverStyleTouchEventsEnabled;
 @property(nonatomic) unsigned long long activePointCount; // @synthesize activePointCount=_activePointCount;
-@property(nonatomic) CDStruct_3eca2549 *activePoints; // @synthesize activePoints=_activePoints;
+//@property(nonatomic) CDStruct_3eca2549 *activePoints; // @synthesize activePoints=_activePoints;
 @property(nonatomic) double gsScreenScale; // @synthesize gsScreenScale=_gsScreenScale;
 @property(nonatomic) struct CGSize gsScreenSize; // @synthesize gsScreenSize=_gsScreenSize;
 @property(nonatomic) struct CGSize screenSize; // @synthesize screenSize=_screenSize;

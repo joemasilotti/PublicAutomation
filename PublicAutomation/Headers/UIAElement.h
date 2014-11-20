@@ -39,7 +39,7 @@
 + (id)_waitForInvocationPath:(id)arg1;
 + (id)_performInvocationPath:(id)arg1;
 + (id)_patienceInvocationPathForUIAObject:(id)arg1;
-+ (id)_invocationForInvoker:(id)arg1 selector:(SEL)arg2 arguments:(struct __va_list_tag [1])arg3;
+//+ (id)_invocationForInvoker:(id)arg1 selector:(SEL)arg2 arguments:(struct __va_list_tag [1])arg3;
 + (double)popPatience;
 + (void)pushPatience:(double)arg1;
 + (void)setPatience:(double)arg1;
