@@ -85,6 +85,7 @@
 		84CFFEEC1A1E084F0017CA5A /* UIAWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAWindow.h; sourceTree = "<group>"; };
 		84CFFEED1A1E084F0017CA5A /* UIAXElement-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAXElement-Protocol.h"; sourceTree = "<group>"; };
 		84CFFEEE1A1E084F0017CA5A /* UIAXElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAXElement.h; sourceTree = "<group>"; };
+		84CFFEEF1A1E0C550017CA5A /* UIAutomation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIAutomation.h; sourceTree = "<group>"; };
 		C194253815D838BD004FC314 /* libPublicAutomation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPublicAutomation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C194253B15D838BD004FC314 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C194253F15D838BD004FC314 /* PublicAutomation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PublicAutomation-Prefix.pch"; sourceTree = "<group>"; };
@@ -113,6 +114,7 @@
 		84CFFEB51A1E08410017CA5A /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				84CFFEEF1A1E0C550017CA5A /* UIAutomation.h */,
 				84CFFEB61A1E084F0017CA5A /* CDStructures.h */,
 				84CFFEB71A1E084F0017CA5A /* NSArray-UIAExtras.h */,
 				84CFFEB81A1E084F0017CA5A /* NSCopying-Protocol.h */,
