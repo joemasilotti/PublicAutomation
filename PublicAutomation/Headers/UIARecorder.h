@@ -29,7 +29,7 @@
 @property(readonly) NSMutableString *keystrokes; // @synthesize keystrokes=_keystrokes;
 @property unsigned long long tapCount; // @synthesize tapCount=_tapCount;
 @property double lastActionTime; // @synthesize lastActionTime=_lastActionTime;
-@property id <UIARecorderDelegate> delegate; // @synthesize delegate=_delegate;
+@property (assign) id <UIARecorderDelegate> delegate; // @synthesize delegate=_delegate;
 @property _Bool isRecording; // @synthesize isRecording=_isRecording;
 @property(retain) NSArray *pendingDragExpressions; // @synthesize pendingDragExpressions=_pendingDragExpressions;
 @property(retain) NSArray *pendingTapExpression; // @synthesize pendingTapExpression=_pendingTapExpression;
