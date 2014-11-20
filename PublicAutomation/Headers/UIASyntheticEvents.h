@@ -72,7 +72,7 @@
 - (_Bool)_sendHIDVendorDefinedEvent:(unsigned int)arg1 usage:(unsigned int)arg2 data:(char *)arg3 dataLength:(unsigned int)arg4;
 - (_Bool)_sendHIDScrollEventX:(double)arg1 Y:(double)arg2 Z:(double)arg3;
 - (_Bool)_sendHIDKeyboardEventPage:(unsigned int)arg1 usage:(unsigned int)arg2 duration:(double)arg3;
-- (_Bool)_sendHIDEvent:(struct __IOHIDEvent *)arg1;
+//- (_Bool)_sendHIDEvent:(struct __IOHIDEvent *)arg1;
 - (struct __IOHIDEvent *)_UIACreateIOHIDEventType:(unsigned int)arg1;
 - (_Bool)_isEdgePoint:(struct CGPoint)arg1;
 - (struct CGPoint)_normalizePoint:(struct CGPoint)arg1;
