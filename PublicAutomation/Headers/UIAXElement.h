@@ -48,9 +48,9 @@
 + (id)_regularAttributeStrings;
 + (id)_regularAttributeNumbers;
 + (id)uiaxElementWithAXUIElementRef:(struct __AXUIElement *)arg1;
-+ (_Bool)unregisterObserver:(struct __AXObserver *)arg1 forAXNotification:(int)arg2;
-+ (_Bool)registerObserver:(struct __AXObserver *)arg1 forAXNotification:(int)arg2;
-+ (_Bool)registerObserver:(struct __AXObserver *)arg1 forAXNotifications:(_Bool)arg2;
+//+ (_Bool)unregisterObserver:(struct __AXObserver *)arg1 forAXNotification:(int)arg2;
+//+ (_Bool)registerObserver:(struct __AXObserver *)arg1 forAXNotification:(int)arg2;
+//+ (_Bool)registerObserver:(struct __AXObserver *)arg1 forAXNotifications:(_Bool)arg2;
 + (void)_raiseIfAXErrorAPIDisabled:(int)arg1;
 + (void)_raiseAXErrorAPIDisabled;
 + (void)initializeAccessibility;

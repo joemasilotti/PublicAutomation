@@ -17,10 +17,10 @@
 + (id)uiaxSystemWideElement;
 + (id)uiaxElementAtPosition:(struct CGPoint)arg1;
 + (id)uiaxApplicationAtPosition:(struct CGPoint)arg1;
-+ (id)uiaxElementWithAXUIElementRef:(struct __AXUIElement *)arg1;
-+ (_Bool)unregisterObserver:(struct __AXObserver *)arg1 forAXNotification:(int)arg2;
-+ (_Bool)registerObserver:(struct __AXObserver *)arg1 forAXNotification:(int)arg2;
-+ (_Bool)registerObserver:(struct __AXObserver *)arg1 forAXNotifications:(_Bool)arg2;
+//+ (id)uiaxElementWithAXUIElementRef:(struct __AXUIElement *)arg1;
+//+ (_Bool)unregisterObserver:(struct __AXObserver *)arg1 forAXNotification:(int)arg2;
+//+ (_Bool)registerObserver:(struct __AXObserver *)arg1 forAXNotification:(int)arg2;
+//+ (_Bool)registerObserver:(struct __AXObserver *)arg1 forAXNotifications:(_Bool)arg2;
 - (NSArray *)ancestry;
 - (NSArray *)descendantsWithAttributes:(NSDictionary *)arg1 traits:(unsigned long long)arg2;
 - (UIAXElement *)descendantWithTestingTrait:(NSString *)arg1;

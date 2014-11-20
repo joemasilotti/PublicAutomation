@@ -161,7 +161,7 @@
 - (id)firstWithPredicate:(id)arg1;
 - (id)firstWithValue:(id)arg1 forKey:(id)arg2;
 - (id)firstWithName:(id)arg1;
-- (unsigned long long)countByEnumeratingWithState:(CDStruct_70511ce9 *)arg1 objects:(id *)arg2 count:(unsigned long long)arg3;
+//- (unsigned long long)countByEnumeratingWithState:(CDStruct_70511ce9 *)arg1 objects:(id *)arg2 count:(unsigned long long)arg3;
 - (id)reverseObjectEnumerator;
 - (id)objectEnumerator;
 - (unsigned long long)indexOfObject:(id)arg1;
